@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Crystal — Web3 Super App | Banking Meets Blockchain</title>
+    <!-- Google Fonts: Space Grotesk (headings), Inter (body), Orbitron (numbers) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Orbitron:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 (free icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- GLASS NAVIGATION -->
+    <nav class="navbar glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gem"></i>
+                <span>CRYSTAL</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#security">Security</a>
+                <a href="#" id="web3LoginMock" class="web3-link"><i class="fas fa-plug"></i> Web3 Login</a>
+                <a href="#cta" class="nav-cta">Get Started</a>
+            </div>
+            <div class="mobile-menu-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-glow"></div>
+            <div class="container hero-content">
+                <div class="badge neon-badge">
+                    <i class="fas fa-shield-alt"></i> Crystal Clear Finance
+                </div>
+                <h1 class="hero-title">The Future of Money is <span class="neon-text">Crystal Clear</span></h1>
+                <p class="hero-subtext">
+                    Store, send, swap, stake, and spend your digital assets from one beautifully designed wallet.<br>
+                    Built for everyone—from beginners to crypto natives.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" id="getStartedBtn"><i class="fas fa-rocket"></i> Get Started</button>
+                    <button class="btn btn-outline" id="watchDemoBtn"><i class="fas fa-play-circle"></i> Watch Demo</button>
+                </div>
+                <div class="trust-row">
+                    <span><i class="fas fa-check-circle"></i> Fiat + Crypto</span>
+                    <span><i class="fas fa-globe"></i> 150+ Countries</span>
+                    <span><i class="fas fa-chart-line"></i> $2B+ Protected</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES GRID: One Wallet Infinite Possibilities -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>One Wallet. <span class="neon-text">Infinite Possibilities.</span></h2>
+                    <p>Crystal combines the simplicity of modern banking with the freedom of Web3.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card glass-card"><i class="fas fa-dollar-sign"></i><h3>Fiat Wallet</h3><p>USD, EUR, NGN, GBP</p></div>
+                    <div class="feature-card glass-card"><i class="fas fa-coins"></i><h3>Crypto Wallet</h3><p>BTC, ETH, SOL & more</p></div>
+                    <div class="feature-card glass-card"><i class="fas fa-exchange-alt"></i><h3>Instant Swaps</h3><p>Cross-chain DEX</p></div>
+                    <div class="feature-card glass-card"><i class="fas fa-palette"></i><h3>NFT Vault</h3><p>Store & showcase NFTs</p></div>
+                    <div class="feature-card glass-card"><i class="fas fa-link"></i><h3>Multi-Chain Support</h3><p>Ethereum, Solana, BNB, Base, Polygon</p></div>
+                    <div class="feature-card glass-card"><i class="fas fa-brain"></i><h3>AI Powered Insights</h3><p>Smart analytics & alerts</p></div>
+                    <div class="feature-card glass-card"><i class="fas fa-credit-card"></i><h3>Virtual Debit Cards</h3><p>Spend crypto worldwide</p></div>
+                    <div class="feature-card glass-card"><i class="fas fa-shield-hooded"></i><h3>Military Grade Security</h3><p>Biometric + encryption</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BUILT FOR THE NEW DIGITAL ECONOMY (Multi-chain tokens) -->
+        <section class="ecosystem">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Built For The <span class="neon-text">New Digital Economy</span></h2>
+                    <p>Whether you're buying your first crypto or managing a diversified portfolio, Crystal gives you complete control.</p>
+                </div>
+                <div class="token-cloud">
+                    <div class="token-item"><i class="fab fa-bitcoin"></i> Bitcoin</div>
+                    <div class="token-item"><i class="fab fa-ethereum"></i> Ethereum</div>
+                    <div class="token-item"><i class="fas fa-bolt"></i> Solana</div>
+                    <div class="token-item"><i class="fas fa-chart-simple"></i> BNB Chain</div>
+                    <div class="token-item"><i class="fas fa-hexagon"></i> Polygon</div>
+                    <div class="token-item"><i class="fas fa-cube"></i> Base</div>
+                    <div class="token-item"><i class="fas fa-infinity"></i> 1000+ Tokens</div>
+                </div>
+                <div class="dashboard-preview">
+                    <i class="fas fa-chart-pie"></i> Portfolio Dashboard • Real-time balances • Cross-chain analytics
+                </div>
+            </div>
+        </section>
+
+        <!-- CRYSTAL AI SECTION -->
+        <section class="ai-section">
+            <div class="container ai-grid">
+                <div class="ai-content">
+                    <span class="chip neon-chip"><i class="fas fa-microchip"></i> Crystal AI</span>
+                    <h2>Meet your personal <span class="neon-text">crypto assistant</span></h2>
+                    <p>Ask questions. Track market movements. Discover opportunities. Get portfolio insights. Powered by advanced artificial intelligence that learns your habits.</p>
+                    <ul class="ai-list">
+                        <li><i class="fas fa-chart-line"></i> Real-time market signals</li>
+                        <li><i class="fas fa-robot"></i> 24/7 conversational AI</li>
+                        <li><i class="fas fa-bell"></i> Gas alerts & cross-chain arbitrage</li>
+                    </ul>
+                    <button class="btn btn-primary ai-demo-btn" id="aiDemoBtn"><i class="fas fa-message"></i> Try AI Assistant</button>
+                </div>
+                <div class="ai-illustration glass-card">
+                    <i class="fas fa-circle-radiation"></i>
+                    <div class="glow-ring"></div>
+                    <div class="ai-terminal">> Ask Crystal: "Best staking yield?"<span class="cursor"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIRTUAL CARDS SPENDING -->
+        <section class="spend-section">
+            <div class="container spend-grid">
+                <div class="spend-card glass-card">
+                    <i class="fas fa-credit-card fa-2x neon-icon"></i>
+                    <h3>Spend Crypto Like Cash</h3>
+                    <p>Connect your Crystal Card and use your assets worldwide.</p>
+                    <div class="spend-features">
+                        <span><i class="fas fa-globe"></i> Online Payments</span>
+                        <span><i class="fas fa-landmark"></i> ATM Withdrawals</span>
+                        <span><i class="fas fa-wifi"></i> Contactless Spending</span>
+                        <span><i class="fas fa-chart-simple"></i> Real-Time Conversion</span>
+                    </div>
+                    <button class="btn btn-outline card-cta">Order Virtual Card →</button>
+                </div>
+                <div class="spend-visual">
+                    <div class="virtual-card-mock">
+                        <div class="card-chip"><i class="fas fa-microchip"></i></div>
+                        <div class="card-number">•••• 4521 •••• 8890</div>
+                        <div class="card-owner">CRYSTAL HOLDER</div>
+                        <div class="card-network"><i class="fas fa-bolt"></i> VISA • CRYPTO</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECURITY SECTION -->
+        <section class="security" id="security">
+            <div class="container security-grid">
+                <div class="security-text">
+                    <i class="fas fa-shield-hooded neon-icon"></i>
+                    <h2>Security <span class="neon-text">First</span></h2>
+                    <p>Your assets deserve enterprise-grade protection. Biometric authentication, multi-factor security, encrypted wallet architecture, and real-time threat monitoring.</p>
+                    <div class="security-stats">
+                        <div><strong>256-bit</strong> Encryption</div>
+                        <div><strong>3FA</strong> Available</div>
+                        <div><strong>100%</strong> Self-Custody</div>
+                    </div>
+                    <p class="small-moto">You stay in control. Always.</p>
+                </div>
+                <div class="security-badge glass-card">
+                    <i class="fas fa-fingerprint"></i> Biometric Login<br>
+                    <i class="fas fa-eye"></i> Real-time Threat Monitor
+                </div>
+            </div>
+        </section>
+
+        <!-- BEAUTIFULLY SIMPLE METAVERSE STYLE -->
+        <section class="metaverse-style">
+            <div class="container">
+                <div class="style-card">
+                    <h2>Beautifully <span class="neon-text">Simple</span></h2>
+                    <p>Cyber-black interface. Neon-green accents. Metaverse-inspired design. Built for speed. Designed for humans.</p>
+                    <div class="style-icons">
+                        <i class="fas fa-moon"></i> <i class="fas fa-bolt"></i> <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA + NEWSLETTER + JOIN GENERATION -->
+        <section class="join" id="cta">
+            <div class="container join-container">
+                <div class="join-header">
+                    <h2>Join The Next Generation <span class="neon-text">Of Finance</span></h2>
+                    <p>Banking and blockchain finally work together. Download Crystal today.</p>
+                    <div class="dual-buttons">
+                        <button class="btn btn-primary" id="downloadMockBtn"><i class="fab fa-apple"></i> Download App</button>
+                        <button class="btn btn-primary" id="createWalletMockBtn"><i class="fas fa-wallet"></i> Create Free Wallet</button>
+                    </div>
+                    <div class="fee-note">✓ No monthly fees. ✓ No hidden charges. ✓ Full ownership of your assets.</div>
+                </div>
+                <!-- Newsletter subscription module -->
+                <div class="newsletter-card glass-card">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h3>Subscribe to Crystal Pulse</h3>
+                    <p>Get Web3 insights, airdrop alerts & platform updates.</p>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="newsEmail" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Subscribe <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div id="newsletterMsg" class="newsletter-message"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <i class="fas fa-gem"></i> Crystal
+                <p>Finance Without Borders — Your Gateway to Web3 Banking.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Support</a>
+                <a href="#">Status</a>
+            </div>
+            <div class="socials">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-discord"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        </div>
+        <div class="copyright">© 2025 Crystal — bridging TradFi & Web3. All rights reserved.</div>
+    </footer>
+
+    <!-- DEMO MODAL STRUCTURE (Watch Demo) -->
+    <div id="demoModal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <i class="fas fa-video neon-icon"></i>
+            <h3>Crystal Demo Preview</h3>
+            <div class="demo-placeholder">
+                <i class="fas fa-wallet fa-3x"></i>
+                <p>Send, stake, swap, and track portfolio in real-time. <br>Fiat on-ramp + cross-chain swaps at your fingertips.</p>
+                <div class="demo-steps">
+                    <span>✓ Fiat/Crypto Dashboard</span> <span>✓ AI Market Insights</span> <span>✓ One-click Staking</span>
+                </div>
+            </div>
+            <button class="btn btn-primary close-demo-btn">Explore Crystal</button>
+        </div>
+    </div>
+
+    <!-- JS modules: main.js & newsletter.js -->
+    <script src="js/main.js"></script>
+    <script src="js/newsletter.js"></script>
+</body>
+</html>
