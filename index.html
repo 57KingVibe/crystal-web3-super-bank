@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Crystal — Web3 Super App. Banking meets blockchain: fiat + crypto wallet, virtual cards, AI assistant, and multi-chain support.">
+    <meta name="theme-color" content="#000000">
     <title>Crystal — Web3 Super App | Banking Meets Blockchain</title>
-    <!-- Google Fonts: Space Grotesk (headings), Inter (body), Orbitron (numbers) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Orbitron:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome 6 (free icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+    <!-- Custom CSS (correct path and filename) -->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="/favicon.ico">
 </head>
 <body>
 
     <!-- GLASS NAVIGATION -->
-    <nav class="navbar glass-nav">
+    <nav class="navbar glass-nav" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <div class="logo">
-                <i class="fas fa-gem"></i>
+                <i class="fas fa-gem" aria-hidden="true"></i>
                 <span>CRYSTAL</span>
             </div>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
                 <a href="#features">Features</a>
                 <a href="#security">Security</a>
-                <a href="#" id="web3LoginMock" class="web3-link"><i class="fas fa-plug"></i> Web3 Login</a>
+                <a href="#" id="web3LoginMock" class="web3-link"><i class="fas fa-plug" aria-hidden="true"></i> Web3 Login</a>
                 <a href="#cta" class="nav-cta">Get Started</a>
             </div>
-            <div class="mobile-menu-toggle" id="mobileToggle">
-                <i class="fas fa-bars"></i>
-            </div>
+            <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
         </div>
     </nav>
 
@@ -233,13 +236,13 @@
     </footer>
 
     <!-- DEMO MODAL STRUCTURE (Watch Demo) -->
-    <div id="demoModal" class="modal">
+    <div id="demoModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="demoTitle">
         <div class="modal-content glass-card">
-            <span class="close-modal">&times;</span>
-            <i class="fas fa-video neon-icon"></i>
-            <h3>Crystal Demo Preview</h3>
+            <button class="close-modal" aria-label="Close demo">&times;</button>
+            <i class="fas fa-video neon-icon" aria-hidden="true"></i>
+            <h3 id="demoTitle">Crystal Demo Preview</h3>
             <div class="demo-placeholder">
-                <i class="fas fa-wallet fa-3x"></i>
+                <i class="fas fa-wallet fa-3x" aria-hidden="true"></i>
                 <p>Send, stake, swap, and track portfolio in real-time. <br>Fiat on-ramp + cross-chain swaps at your fingertips.</p>
                 <div class="demo-steps">
                     <span>✓ Fiat/Crypto Dashboard</span> <span>✓ AI Market Insights</span> <span>✓ One-click Staking</span>

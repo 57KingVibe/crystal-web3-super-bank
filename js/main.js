@@ -1,10 +1,11 @@
 // Mobile menu toggle
 const mobileToggle = document.getElementById('mobileToggle');
-const navLinks = document.querySelector('.nav-links');
+const navLinks = document.getElementById('navLinks');
 
-if (mobileToggle) {
+if (mobileToggle && navLinks) {
     mobileToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
+        const isOpen = navLinks.classList.toggle('active');
+        mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 }
 
@@ -14,7 +15,10 @@ document.getElementById('getStartedBtn')?.addEventListener('click', () => {
 });
 document.getElementById('watchDemoBtn')?.addEventListener('click', () => {
     const modal = document.getElementById('demoModal');
-    if (modal) modal.style.display = 'flex';
+    if (modal) {
+        modal.style.display = 'flex';
+        modal.setAttribute('aria-hidden', 'false');
+    }
 });
 document.getElementById('downloadMockBtn')?.addEventListener('click', () => {
     alert('📱 Crystal App download will begin shortly (iOS/Android coming soon)');
@@ -26,14 +30,30 @@ document.getElementById('createWalletMockBtn')?.addEventListener('click', () => 
 // Demo modal close
 const modal = document.getElementById('demoModal');
 const closeBtns = document.querySelectorAll('.close-modal, .close-demo-btn');
-closeBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        if (modal) modal.style.display = 'none';
+
+if (closeBtns && modal) {
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+        });
     });
-});
-window.addEventListener('click', (e) => {
-    if (e.target === modal) modal.style.display = 'none';
-});
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+        }
+    });
+
+    // Close on Escape
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'flex') {
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+        }
+    });
+}
 
 // AI Assistant demo simulation
 document.getElementById('aiDemoBtn')?.addEventListener('click', () => {
@@ -41,7 +61,8 @@ document.getElementById('aiDemoBtn')?.addEventListener('click', () => {
 });
 
 // Web3 Login Mock (MetaMask-like)
-document.getElementById('web3LoginMock')?.addEventListener('click', () => {
+document.getElementById('web3LoginMock')?.addEventListener('click', (e) => {
+    e.preventDefault();
     alert('🔌 Crystal Web3 Login: Connect wallet (MetaMask / WalletConnect) to access dashboard.\n(Mock: you would see wallet selection)');
 });
 
